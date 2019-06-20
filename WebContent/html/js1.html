@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<Script>
+	//window.alert("hello user")
+	function sayHello() {
+
+		nm = prompt("Enter Your Name")
+		alert("hello " + nm)
+	}
+		
+	function changeColor(color)
+		{
+			
+		document.bgColor=color
+				
+		}
+	function  showText()
+	{
+	   	
+var data=document.getElementById("heading")
+	data.innerHTML='use of innerhtml'      
+	}
+</Script>
+</head>
+<body>
+	<button onclick="sayHello()">click</button><br>
+	<input type="radio" name="rd" value="red" onclick="changeColor(this.value)">RED
+	<input type="radio" name="rd" value="green" onclick="changeColor(this.value)">GREEN
+	<h1 id="heading" style="color:purple"></h1>
+	<button onclick="showText()">show</button>
+	
+</body>
+</html>
